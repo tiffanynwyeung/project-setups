@@ -1,0 +1,57 @@
+////
+/// All default styles for standard typography elements live here.
+/// @group typography
+////
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: $fw-regular; // Chrome fix for extra font bolding
+}
+
+
+///
+/// Basic text elements
+
+p {
+  @include type-body;
+}
+
+
+a {
+  display: inline;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  transition: $default-transition;
+
+  &:active,
+  &:focus,
+  &:hover {
+    transition: $default-transition;
+  }
+}
+
+
+///
+/// Headings
+
+h1 {
+  padding: 0;
+  line-height: lh('tightest');
+}
+
+h2 {
+  @include type-title;
+
+  font-family: ff('title');
+}
+
+h3 {
+  font-family: ff('title');
+  display: block;
+}

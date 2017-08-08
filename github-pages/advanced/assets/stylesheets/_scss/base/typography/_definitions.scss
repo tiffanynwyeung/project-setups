@@ -1,0 +1,77 @@
+////
+/// All variable, function, and mixin declarations for typography live here.
+/// @group typography, @group utilities
+////
+
+///
+/// Variable: font weights
+/// Syntax: $fw-[weight]
+
+$fw-regular: 400;
+
+
+$font-family-data: (
+  'default': #{ "-apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif" },
+  'body': #{ " '', 'Helvetica Neue', sans-serif" },
+  'title': #{ " '', sans-serif" }
+);
+
+///
+/// Returns a font-family declaration given the associated name.
+/// @param {String} $variant [default] - the family name. Defaults to 'default'.
+/// @returns {String} - the desired font family declaration.
+
+@function ff($variant: 'default') {
+  @if map-has-key($font-family-data, $variant) {
+    @return map-get($font-family-data, $variant);
+  } @else {
+    @error "#{$variant} does not exist in font family data.";
+  }
+}
+
+
+$line-height-data: (
+  'tightest': 1,
+  'tighter': ,
+  'tight': ,
+  'base': ,
+  'loose': ,
+);
+
+///
+/// Returns a line-height given the associated name.
+/// @param {String} $variant [base] - the variant name. Defaults to 'base'.
+/// @returns {Number} - the desired line-height.
+
+@function lh($variant: 'base') {
+  @if map-has-key($line-height-data, $variant) {
+    @return map-get($line-height-data, $variant);
+  } @else {
+    @error "#{$variant} does not exist in line height data.";
+  }
+}
+
+
+///
+/// Mixin: type-small
+/// Default text styles for smaller texr
+
+@mixin type-small {
+
+}
+
+///
+/// Mixin: type-body
+/// Default body typography style
+
+@mixin type-body {
+
+}
+
+///
+/// Mixin: type-title
+/// Default title styles
+
+@mixin type-title {
+
+}

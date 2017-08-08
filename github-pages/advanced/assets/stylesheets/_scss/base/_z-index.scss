@@ -1,0 +1,23 @@
+////
+/// Default site element z-indexes live here.
+/// @group utilities
+////
+
+$z-index-data: (
+  'base': 1,
+  'high': 2,
+  'higher': 3,
+);
+
+///
+/// Returns a z-index value given the associated keyword.
+/// @param {String} $key [base] - the keyword. Defaults to 'base'.
+/// @returns {Integer} - the z-index.
+
+@function z-index($key: 'base') {
+  @if map-has-key($z-index-data, $key){
+    @return map-get($z-index-data, $key);
+  }
+
+  @error "Unknown `#{$key}` in z-index data.";
+}

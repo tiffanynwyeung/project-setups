@@ -1,0 +1,18 @@
+---
+# global.scss: global stylesheet.
+---
+
+/// Utilities
+@import 'base/breakpoints';
+@import 'base/colors';
+@import 'base/utilities';
+@import 'base/z-index';
+@import 'base/typography/definitions';
+
+/// Foundation styles
+@import 'base/foundation';
+@import 'base/typography/typography';
+
+/// Components
+@import 'components/header';
+@import 'components/footer';
