@@ -5,6 +5,23 @@
 
 html {
   font-family: ff();
+
+  // ripped from normalize.css
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  /* 
+  Uncomment this line if:
+  a) you have white text on dark backgrounds for your content
+  b) if you know what you're doing
+  */
+  // -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
 html,
@@ -14,7 +31,7 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
-  font: ;
+  font: '';
   word-wrap: break-word;
   vertical-align: baseline;
 }

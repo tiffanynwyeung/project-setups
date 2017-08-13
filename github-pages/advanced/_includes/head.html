@@ -11,5 +11,12 @@
 
   <link rel="icon" type="image/png" href="">
 
+  <style>
+    {% capture atf %}
+      {% include scss/above-the-fold.scss %}
+    {% endcapture %}
+    {{ atf | scssify }}
+  </style>
+
   <link href="" rel="stylesheet">
 </head>

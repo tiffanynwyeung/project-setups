@@ -25,14 +25,12 @@ p {
 
 a {
   display: inline;
-  border-bottom: 1px solid;
   text-decoration: none;
-  transition: $default-transition;
 
   &:active,
   &:focus,
   &:hover {
-    transition: $default-transition;
+
   }
 }
 
@@ -41,17 +39,13 @@ a {
 /// Headings
 
 h1 {
-  padding: 0;
-  line-height: lh('tightest');
+  font-family: ff('');
 }
 
 h2 {
-  @include type-title;
-
-  font-family: ff('title');
+  font-family: ff('');
 }
 
 h3 {
-  font-family: ff('title');
-  display: block;
+  font-family: ff('');
 }

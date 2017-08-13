@@ -27,16 +27,6 @@ sass:
   sass_dir: assets/stylesheets/_scss # change this PATH if you want to place your Sass files in a different directory
   style: :compressed # look at Jekyll docs for more information; this setting is useful for minifying CSS a bit
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
-
 ### Other
 username: # Various site usernames
 analytics: # Google analytics

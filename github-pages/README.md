@@ -6,7 +6,7 @@ I've included two versions: basic and advanced. Both are useful for people who w
 
 ## Basic version
 
-Useful for people who only need Sass; comes with a default `_sass` folder and very simple config file to tell Jekyll to compile Sass.
+Useful for people who only need Sass; comes with a default `_sass` folder and a very simple config file to tell Jekyll to compile Sass.
 
 ## Advanced version
 
@@ -20,8 +20,10 @@ Useful for people who want extreme customization overall, with:
 Includes:
 - Basic templates for HTML components, e.g. site header/footer, HTML `<head>` information
 - Custom config file including useful gems I use personally
-- Sass folder setup
-- Build deploy script
+- Sass folder setup with folders created for custom files, fonts, images, scripts, etc.
+- A [build deploy script](https://github.com/X1011/git-directory-deploy)
 
 ## How to install
-Just copy everything in this folder, paste it in your desired directory, run `jekyll serve`, go to `localhost:4000` to view your site, and start fiddling around.
+Just copy everything in either folder, paste it in your desired directory, run `jekyll serve`, go to `localhost:4000` to view your site, and start fiddling around.
+
+If you see any `.keep` files, feel free to delete them at whim.
