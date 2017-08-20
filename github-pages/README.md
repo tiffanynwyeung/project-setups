@@ -15,7 +15,8 @@ Useful for people who want extreme customization overall, with:
 - Separating HTML into multiple "components"
 - Programmatic HTML (e.g. for loops for creating a list of links hosted in `data/`)
 - Above-the-fold rendering
-- Custom plugins and a deploy script to build from one branch and push to another (GP blocks custom plugins aside from their own, so in order to use them all code needs to be compiled first)
+- Custom gems not provided by Github Pages
+- A deploy script to build from one branch and push to another (GP blocks custom plugins aside from their own, so in order to use them all code needs to be compiled first before pushing it to the repo)
 
 Includes:
 - Basic templates for HTML components, e.g. site header/footer, HTML `<head>` information
